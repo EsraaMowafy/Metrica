@@ -1,0 +1,87 @@
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    /* content:""; */
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    border-left:1px solid
+}
+.tree li {
+    /* display: flex; */
+    margin:0;
+    padding:5px 15px;
+    line-height:3em;
+    color:#369;
+    font-weight:700;
+    position:relative;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.tree li.branch a{
+    font-size:20px ;
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:24px;
+    right:0
+}
+.tree ul li:last-child:before {
+    background:#fff;
+    height:auto;
+    top:20px;
+    bottom:0
+}
+i.indicator {
+    margin-left:10px;
+    font-size: 15px;
+    float: right;
+    margin-top: 12px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+.tree_view .add_dept{
+    top: -17px;
+    left:25px;
+}
+.tree_view .tree_action{
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+.tree_view .tree_action a{
+    padding: 5px;
+    line-height: 5px;
+}

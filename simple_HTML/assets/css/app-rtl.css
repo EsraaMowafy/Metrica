@@ -5632,7 +5632,11 @@ div.hopscotch-bubble .hopscotch-content {
   -webkit-box-shadow: 0 0 0 2px #fcfcfd;
           box-shadow: 0 0 0 2px #fcfcfd;
 }
-
+.img-group .avatar-box{
+  background: #fff;
+  margin-right: -12px;
+  border-radius: 50%;
+}
 .avatar-box {
   position: relative;
   display: inline-block;
@@ -14016,3 +14020,9 @@ ul.steppedprogress li:after {
   }
 }
 /*# sourceMappingURL=app-rtl.css.map */
+/*#region new responsive */
+@media(max-width:767px){
+
+}
+
+/*#endregion new responsive */
