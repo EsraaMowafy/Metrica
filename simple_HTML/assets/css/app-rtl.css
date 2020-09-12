@@ -14026,3 +14026,19 @@ ul.steppedprogress li:after {
 }
 
 /*#endregion new responsive */
+/*#region new styles */
+.product_imgs .selected_img .image_hover{
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  top: 0;
+  border-radius: 0.25rem;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.product_imgs .selected_img:hover .image_hover , .product_imgs .selected_img.selected .image_hover{
+  opacity: 1;
+}
+
+/*#endregion new styles */

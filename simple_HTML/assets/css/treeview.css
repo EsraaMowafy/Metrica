@@ -1,4 +1,4 @@
-.tree, .tree ul {
+/* .tree, .tree ul {
     margin:0;
     padding:0;
     list-style:none
@@ -11,7 +11,6 @@
     margin-left:.5em
 }
 .tree ul:before {
-    /* content:""; */
     display:block;
     width:0;
     position:absolute;
@@ -21,7 +20,6 @@
     border-left:1px solid
 }
 .tree li {
-    /* display: flex; */
     margin:0;
     padding:5px 15px;
     line-height:3em;
@@ -71,6 +69,11 @@ i.indicator {
     margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
     outline: 0;
+} */
+
+.tree .accordion .card {
+    overflow: visible;
+    margin-bottom: 20px !important;
 }
 .tree_view .add_dept{
     top: -17px;
@@ -78,10 +81,29 @@ i.indicator {
 }
 .tree_view .tree_action{
     position: absolute;
-    top: -15px;
+    top: -13px;
     left: 20px;
 }
 .tree_view .tree_action a{
-    padding: 5px;
+    padding: 8px;
     line-height: 5px;
+}
+.tree_view .card-header a .title{
+    position: relative;
+    margin-right: 15px;
+}
+.tree_view .card-header a .title::before{
+    position: absolute;
+    font-weight: bold;
+    content: "\e64b";
+    font-family: 'themify' !important;
+    top: 20%;
+    right: -20px;
+
+}
+.tree_view .card-header a.collapsed .title::before{
+    content: "\e64a";
+}
+.tree_view .accordion .collapse .card-body{
+    padding: 5px;
 }

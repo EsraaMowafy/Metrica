@@ -11,9 +11,6 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="../assets/images/favicon.ico">
 
-    <link href="../assets/css/treeview.css" rel="stylesheet">
-
-
     <!-- App css -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../assets/css/jquery-ui.min.css" rel="stylesheet">
@@ -560,10 +557,10 @@
                             <div class="float-right">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0);">لوحة التحكم</a></li>
-                                    <li class="breadcrumb-item active">إدارة الأقسام</li>
+                                    <li class="breadcrumb-item active">إضافة منتج </li>
                                 </ol>
                             </div>
-                            <h4 class="page-title">إدارة الأقسام</h4>
+                            <h4 class="page-title">إضافة منتج </h4>
                         </div>
                         <!--end page-title-box-->
                     </div>
@@ -573,359 +570,179 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-body position-relative tree_view">
-                                <a class="btn btn-primary text-white position-absolute add_dept">إضافة قسم جديد</a>
-                                <div class="tree mt-5">
-                                    <div class="accordion" id="accordionExample">
-                                        <div class="card border mb-1 shadow-none">
-                                            <div class="tree_action">
-                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                    data-placement="top" title="" data-original-title="تعديل القسم">
-                                                    <i class="las la-pen text-white font-weight-bold"></i>
-                                                </a>
-                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                    data-placement="top" title="" data-original-title="حذف القسم">
-                                                    <i class="las la-trash-alt text-white font-weight-bold"></i>
-                                                </a>
-                                            </div>
-                                            <div class="card-header" id="headingOne">
-                                                <a href="" class="text-dark d-flex justify-content-between mt-2"
-                                                    data-toggle="collapse" data-target="#collapseOne"
-                                                    aria-expanded="true" aria-controls="collapseOne">
-                                                    <div class="title">
-                                                        <img class="img-responsive rounded-circle"
-                                                            src="../assets/images/widgets/project1.jpg" width="30"
-                                                            height="30" />
-                                                        <strong>Men</strong>
-                                                    </div>
-                                                    <div>
-                                                        <input class="form-control form-control-sm" placeholder="" />
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                data-parent="#accordionExample2">
-                                                <div class="card-body ml-3">
-                                                    <div class="accordion" id="accordionExample2">
-                                                        <div class="card border mb-1 shadow-none">
-                                                            <div class="tree_action">
-                                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="تعديل القسم">
-                                                                    <i
-                                                                        class="las la-pen text-white font-weight-bold"></i>
-                                                                </a>
-                                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="حذف القسم">
-                                                                    <i
-                                                                        class="las la-trash-alt text-white font-weight-bold"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="card-header" id="headingOne2">
-                                                                <a href=""
-                                                                    class="text-dark d-flex justify-content-between mt-2"
-                                                                    data-toggle="collapse" data-target="#collapseOne2"
-                                                                    aria-expanded="true" aria-controls="collapseOne2">
-                                                                    <div class="title">
-                                                                        <img class="img-responsive rounded-circle"
-                                                                            src="../assets/images/widgets/project1.jpg"
-                                                                            width="30" height="30" />
-                                                                        <strong>Shirts -- 1 (4)</strong>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="form-control form-control-sm"
-                                                                            placeholder="" />
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                            <div id="collapseOne2" class="collapse show"
-                                                                aria-labelledby="headingOne2"
-                                                                data-parent="#accordionExample2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="card mb-1 border shadow-none">
-                                                            <div class="tree_action">
-                                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="تعديل القسم">
-                                                                    <i
-                                                                        class="las la-pen text-white font-weight-bold"></i>
-                                                                </a>
-                                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="حذف القسم">
-                                                                    <i
-                                                                        class="las la-trash-alt text-white font-weight-bold"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="card-header" id="headingTwo">
-                                                                <a href=""
-                                                                    class="collapsed text-dark d-flex justify-content-between mt-2"
-                                                                    data-toggle="collapse" data-target="#collapseTwo2"
-                                                                    aria-expanded="false" aria-controls="collapseTwo2">
-                                                                    <div class="title">
-                                                                        <img class="img-responsive rounded-circle"
-                                                                            src="../assets/images/widgets/project1.jpg"
-                                                                            width="30" height="30" />
-                                                                        <strong>بنطالون -- 1 (10)</strong>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="form-control form-control-sm"
-                                                                            placeholder="" />
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                            <div id="collapseTwo2" class="collapse"
-                                                                aria-labelledby="headingTwo"
-                                                                data-parent="#accordionExample2">
-                                                            </div>
-                                                        </div>
-                                                        <div class="card mb-0 border shadow-none">
-                                                            <div class="tree_action">
-                                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="تعديل القسم">
-                                                                    <i
-                                                                        class="las la-pen text-white font-weight-bold"></i>
-                                                                </a>
-                                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="حذف القسم">
-                                                                    <i
-                                                                        class="las la-trash-alt text-white font-weight-bold"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="card-header" id="headingThree">
-                                                                <a href=""
-                                                                    class="collapsed text-dark d-flex justify-content-between mt-2"
-                                                                    data-toggle="collapse" data-target="#collapseThree2"
-                                                                    aria-expanded="false"
-                                                                    aria-controls="collapseThree2">
-                                                                    <div class="title">
-                                                                        <img class="img-responsive rounded-circle"
-                                                                            src="../assets/images/widgets/project1.jpg"
-                                                                            width="30" height="30" />
-                                                                        <strong>بنطالون -- 1 (10)</strong>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="form-control form-control-sm"
-                                                                            placeholder="" />
-                                                                    </div>
-                                                                </a>
-                                                            </div>
-                                                            <div id="collapseThree2" class="collapse"
-                                                                aria-labelledby="headingThree"
-                                                                data-parent="#accordionExample2">
-                                                            </div>
+                            <div class="card-body position-relative">
+                                <div class="product_prop">
+                                    <div class="alert-warning p-2 mb-2">
+                                        <h3 class="text-white">الخصائص</h3>
+                                        <h4 class="text-white">
+                                            <i class="fa fa-exclamation-triangle"></i>
+                                            <span>يتيح لك إختيار الخصائص المناسبة للمنتج قم بإختيار الخصائص المطلوبة
+                                                بعناية</span>
+                                        </h4>
+                                        <form>
+                                            <div class="form-group row">
+                                                <div class="col-md-4 col-12">
+                                                    <div class="my-2">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio1" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label text-white font-16"
+                                                                for="customRadio1">ألوان
+                                                                فقط</label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-1 border shadow-none">
-                                            <div class="tree_action">
-                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                    data-placement="top" title="" data-original-title="تعديل القسم">
-                                                    <i class="las la-pen text-white font-weight-bold"></i>
-                                                </a>
-                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                    data-placement="top" title="" data-original-title="حذف القسم">
-                                                    <i class="las la-trash-alt text-white font-weight-bold"></i>
-                                                </a>
-                                            </div>
-                                            <div class="card-header" id="headingTwo">
-                                                <a href=""
-                                                    class="collapsed text-dark d-flex justify-content-between mt-2"
-                                                    data-toggle="collapse" data-target="#collapseTwo"
-                                                    aria-expanded="false" aria-controls="collapseTwo">
-                                                    <div class="title">
-                                                        <img class="img-responsive rounded-circle"
-                                                            src="../assets/images/widgets/project1.jpg" width="30"
-                                                            height="30" />
-                                                        <strong>Women</strong>
-                                                    </div>
-                                                    <div>
-                                                        <input class="form-control form-control-sm" placeholder="" />
-                                                    </div>
-
-                                                </a>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                data-parent="#accordionExample">
-                                                <!-- <div class="card-body">
-                                                    <p class="mb-0 text-muted">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                                        accusamus terry richardson ad squid.
-                                                    </p>
-                                                </div> -->
-                                            </div>
-                                        </div>
-                                        <div class="card mb-0 border shadow-none">
-                                            <div class="tree_action">
-                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                    data-placement="top" title="" data-original-title="تعديل القسم">
-                                                    <i class="las la-pen text-white font-weight-bold"></i>
-                                                </a>
-                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                    data-placement="top" title="" data-original-title="حذف القسم">
-                                                    <i class="las la-trash-alt text-white font-weight-bold"></i>
-                                                </a>
-                                            </div>
-                                            <div class="card-header" id="headingThree">
-                                                <a href=""
-                                                    class="collapsed text-dark d-flex justify-content-between mt-2"
-                                                    data-toggle="collapse" data-target="#collapseThree"
-                                                    aria-expanded="false" aria-controls="collapseThree">
-                                                    <div class="title">
-                                                        <img class="img-responsive rounded-circle"
-                                                            src="../assets/images/widgets/project1.jpg" width="30"
-                                                            height="30" />
-                                                        <strong>Kids</strong>
-                                                    </div>
-                                                    <div>
-                                                        <input class="form-control form-control-sm" placeholder="" />
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                                data-parent="#accordionExample">
-                                                <div class="card-body ml-3">
-                                                    <div class="accordion" id="accordionExamplechild1">
-                                                        <div class="card border mb-1 shadow-none">
-                                                            <div class="tree_action">
-                                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="تعديل القسم">
-                                                                    <i
-                                                                        class="las la-pen text-white font-weight-bold"></i>
-                                                                </a>
-                                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="حذف القسم">
-                                                                    <i
-                                                                        class="las la-trash-alt text-white font-weight-bold"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="card-header" id="headingOne3">
-                                                                <a href=""
-                                                                    class="text-dark d-flex justify-content-between mt-2"
-                                                                    data-toggle="collapse" data-target="#collapseOne3"
-                                                                    aria-expanded="true" aria-controls="collapseOne3">
-                                                                    <div class="title">
-                                                                        <img class="img-responsive rounded-circle"
-                                                                            src="../assets/images/widgets/project1.jpg"
-                                                                            width="30" height="30" />
-                                                                        <strong> GIRLS -- 6 (8)</strong>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="form-control form-control-sm"
-                                                                            placeholder="" />
-                                                                    </div>
-
-                                                                </a>
-                                                            </div>
-                                                            <div id="collapseOne3" class="collapse show"
-                                                                aria-labelledby="headingOne3"
-                                                                data-parent="#accordionExamplechild1">
-                                                                <div class="card-body">
-                                                                    <div class="accordion" id="accordionExample5">
-                                                                        <div class="card border mb-1 shadow-none">
-                                                                            <div class="tree_action">
-                                                                                <a class="btn btn-primary"
-                                                                                    data-toggle="tooltip-custom"
-                                                                                    data-placement="top" title=""
-                                                                                    data-original-title="تعديل القسم">
-                                                                                    <i
-                                                                                        class="las la-pen text-white font-weight-bold"></i>
-                                                                                </a>
-                                                                                <a class="btn btn-danger"
-                                                                                    data-toggle="tooltip-custom"
-                                                                                    data-placement="top" title=""
-                                                                                    data-original-title="حذف القسم">
-                                                                                    <i
-                                                                                        class="las la-trash-alt text-white font-weight-bold"></i>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="card-header" id="headingOne5">
-                                                                                <a href=""
-                                                                                    class="text-dark d-flex justify-content-between mt-2"
-                                                                                    data-toggle="collapse"
-                                                                                    data-target="#collapseOne5"
-                                                                                    aria-expanded="true"
-                                                                                    aria-controls="collapseOne5">
-                                                                                    <div class="title">
-                                                                                        <img class="img-responsive rounded-circle"
-                                                                                            src="../assets/images/widgets/project1.jpg"
-                                                                                            width="30" height="30" />
-                                                                                        <strong>فثقغفق -- 9
-                                                                                            (11)</strong>
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <input
-                                                                                            class="form-control form-control-sm"
-                                                                                            placeholder="" />
-                                                                                    </div>
-                                                                                </a>
-                                                                            </div>
-                                                                            <div id="collapseOne5" class="collapse show"
-                                                                                aria-labelledby="headingOne5"
-                                                                                data-parent="#accordionExample5">
-                                                                                <!-- <div class="card-body">
-                                                                                    
-                                                                                </div> -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card mb-1 border shadow-none">
-                                                            <div class="tree_action">
-                                                                <a class="btn btn-primary" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="تعديل القسم">
-                                                                    <i
-                                                                        class="las la-pen text-white font-weight-bold"></i>
-                                                                </a>
-                                                                <a class="btn btn-danger" data-toggle="tooltip-custom"
-                                                                    data-placement="top" title=""
-                                                                    data-original-title="حذف القسم">
-                                                                    <i
-                                                                        class="las la-trash-alt text-white font-weight-bold"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="card-header" id="headingTwo3">
-                                                                <a href=""
-                                                                    class="collapsed text-dark d-flex justify-content-between mt-2"
-                                                                    data-toggle="collapse" data-target="#collapseTwo3"
-                                                                    aria-expanded="false" aria-controls="collapseTwo3">
-                                                                    <div class="title">
-                                                                        <img class="img-responsive rounded-circle"
-                                                                            src="../assets/images/widgets/project1.jpg"
-                                                                            width="30" height="30" />
-                                                                        <strong> BOYS -- 6 (7)</strong>
-                                                                    </div>
-                                                                    <div>
-                                                                        <input class="form-control form-control-sm"
-                                                                            placeholder="" />
-                                                                    </div>
-
-                                                                </a>
-                                                            </div>
-                                                            <div id="collapseTwo3" class="collapse"
-                                                                aria-labelledby="headingTwo3"
-                                                                data-parent="#accordionExamplechild1">
-                                                                <!-- <div class="card-body">
-                                                                    <p class="mb-0 text-muted">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                                    </p>
-                                                                </div> -->
-                                                            </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="my-2">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio2" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label text-white font-16"
+                                                                for="customRadio2">مقاسات فقط</label>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="my-2">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio3" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label text-white font-16"
+                                                                for="customRadio3">ألوان
+                                                                ومقاسات</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- form-group -->
+                                            <!--  اختيار اللون فقط -->
+                                            <div class="form-group row">
+                                                <label class="col-lg-2 text-white">اختار اللون</label>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="custom-select" required="">
+                                                            <option value="">اختار اللون</option>
+                                                            <option value="1">
+                                                                <span></span>
+                                                                <span>الأحمر</span>
+                                                            </option>
+                                                            <option value="2">
+                                                                <span></span>
+                                                                <span>الأخضر</span>
+                                                            </option>
+                                                            <option value="3">
+                                                                <span></span>
+                                                                <span>الأصفر</span>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <!--  اختيار المقاس فقط -->
+                                            <div class="form-group row">
+                                                <label class="col-lg-2 text-white">اختار المقاس</label>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="custom-select" required="">
+                                                            <option value="">اختار المقاس</option>
+                                                            <option value="1">
+                                                                <span></span>
+                                                                <span>small</span>
+                                                            </option>
+                                                            <option value="2">
+                                                                <span></span>
+                                                                <span>Large</span>
+                                                            </option>
+                                                            <option value="3">
+                                                                <span></span>
+                                                                <span>XLarge</span>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--  اختيار المقاس واللون  -->
+                                            <div class="form-group row">
+                                                <label class="col-lg-2 text-white">اختار اللون</label>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="custom-select" required="">
+                                                            <option value="">اختار اللون</option>
+                                                            <option value="1">
+                                                                <span></span>
+                                                                <span>الأحمر</span>
+                                                            </option>
+                                                            <option value="2">
+                                                                <span></span>
+                                                                <span>الأخضر</span>
+                                                            </option>
+                                                            <option value="3">
+                                                                <span></span>
+                                                                <span>الأصفر</span>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <label class="col-lg-2 text-white">اختار المقاس</label>
+                                                <div class="col-lg-4">
+                                                    <div class="form-group">
+                                                        <select class="custom-select" required="">
+                                                            <option value="">اختار المقاس</option>
+                                                            <option value="1">
+                                                                <span></span>
+                                                                <span>small</span>
+                                                            </option>
+                                                            <option value="2">
+                                                                <span></span>
+                                                                <span>Large</span>
+                                                            </option>
+                                                            <option value="3">
+                                                                <span></span>
+                                                                <span>XLarge</span>
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card">
+                            <div class="card-body position-relative">
+                                <h4 class="mt-0 header-title">الصور</h4>
+                                <div class="product_imgs row">
+                                    <div class="selected_img position-relative col-lg-4 col-12">
+                                        <img class="rounded" width="100%" height="100%" src="../assets/images/404.png">
+                                        <div class="image_hover">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio44" name="customRadio5"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio44"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selected_img position-relative selected col-lg-4 col-12">
+                                        <img class="rounded" width="100%" height="100%" src="../assets/images/404.png">
+                                        <div class="image_hover">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio45" name="customRadio5"
+                                                    class="custom-control-input" checked>
+                                                <label class="custom-control-label" for="customRadio45"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="selected_img position-relative col-lg-4 col-12">
+                                        <img class="rounded" width="100%" height="100%" src="../assets/images/404.png">
+                                        <div class="image_hover">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio46" name="customRadio5"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio46"></label>
+                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
